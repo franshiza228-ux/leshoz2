@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>О нас — БЕРЁЗКА</title>
+    <style>
+        body { font-family: 'Segoe UI', sans-serif; margin: 0; line-height: 1.6; color: #333; }
+        header { background: #2d5a27; color: white; padding: 1rem; text-align: center; }
+        nav { background: #3e7b37; padding: 0.5rem; text-align: center; position: sticky; top: 0; }
+        nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; }
+        
+        .container { max-width: 1000px; margin: 20px auto; padding: 0 20px; }
+        
+        /* Стили для секции истории */
+        .history-section { background: #f4f4f4; padding: 30px; border-radius: 15px; margin-bottom: 40px; }
+        
+        /* Стили для карточек команды */
+        .team-title { text-align: center; margin-bottom: 30px; color: #2d5a27; }
+        .team-grid { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); 
+            gap: 30px; 
+        }
+        .member-card { 
+            text-align: center; 
+            background: white; 
+            border: 1px solid #ddd; 
+            border-radius: 10px; 
+            padding: 20px;
+            transition: 0.3s;
+        }
+        .member-card:hover { box-shadow: 0 10px 20px rgba(0,0,0,0.1); }
+        
+        /* Заглушка для фото */
+        .photo-placeholder { 
+            width: 120px; 
+            height: 120px; 
+            background: #ccc; 
+            border-radius: 50%; 
+            margin: 0 auto 15px; 
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #666;
+            font-size: 0.8rem;
+        }
+
+        footer { background: #2d5a27; color: white; text-align: center; padding: 20px; margin-top: 40px; }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>О нашем лесничестве</h1>
+</header>
+
+<nav>
+     <a href="index.html">Главная</a>
+    <a href="about.html">О нас</a>
+    <a href="projects.html">Проекты</a>
+    <a href="gallery.html">Галерея</a>
+    <a href="contacts.html">Контакты</a>
+</nav>
+
+<div class="container">
+    <section class="history-section">
+        <h2>Наша история</h2>
+        <p>Наше школьное лесничество было создано в ---- году. Мы объединили ребят, которые неравнодушны к природе родного края. Здесь мы учимся основам экологии, биологии и лесного хозяйства под руководством опытных наставников.</p>
+    </section>
+
+    <h2 class="team-title">Наши руководители и актив</h2>
+    
+    <div class="team-grid">
+        <div class="member-card">
+            <div class="photo-placeholder">ФОТО 120x120</div>
+            <h3>Имя Фамилия</h3>
+            <p style="color: #2d5a27; font-weight: bold;">Руководитель</p>
+            <p>Учитель биологии, координатор всех лесных выездов.</p>
+        </div>
+
+        <div class="member-card">
+            <div class="photo-placeholder">ФОТО 120x120</div>
+            <h3>Имя Фамилия</h3>
+            <p style="color: #2d5a27; font-weight: bold;">Наставник</p>
+            <p>Представитель местного лесхоза, помогает нам на практике.</p>
+        </div>
+
+        <div class="member-card">
+            <div class="photo-placeholder">ФОТО 120x120</div>
+            <h3>Имя Фамилия</h3>
+            <p style="color: #2d5a27; font-weight: bold;">Староста</p>
+            <p>Ученик 11 класса, отвечает за организацию волонтеров.</p>
+        </div>
+
+        <div class="member-card">
+            <div class="photo-placeholder">ФОТО 120x120</div>
+            <h3>Имя Фамилия</h3>
+            <p style="color: #2d5a27; font-weight: bold;">Активист</p>
+            <p>Ученица 9 класса, ведет наш экологический блог.</p>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>© 2026 Школьное лесничество «БЕРЁЗКА»</p>
+</footer>
+
+</body>
+</html>

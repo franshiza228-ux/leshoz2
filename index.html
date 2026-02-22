@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Школьное лесничество «БЕРЁЗКА»</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; line-height: 1.6; color: #333; }
+        header { background: #2d5a27; color: white; padding: 1rem; text-align: center; }
+        nav { background: #3e7b37; padding: 0.5rem; text-align: center; }
+        nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; }
+        
+        .hero { 
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+                        url('img/forest.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+        }
+
+        .container { max-width: 1000px; margin: 20px auto; padding: 0 20px; }
+        
+        .stats { display: flex; justify-content: space-around; background: #f4f4f4; padding: 20px; border-radius: 10px; margin: 20px 0; }
+        .stat-item { text-align: center; }
+        .stat-item h2 { color: #2d5a27; margin-bottom: 5px; }
+
+        .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
+        .card { border: 1px solid #ddd; border-radius: 8px; overflow: hidden; transition: 0.3s; }
+        .card:hover { transform: translateY(-5px); box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
+        .card-content { padding: 15px; }
+        
+        footer { background: #2d5a27; color: white; text-align: center; padding: 20px; margin-top: 40px; }
+        .btn { background: #e67e22; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; font-weight: bold; }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>🌲 МБОУ «Славкинская СШ» </h1>
+    <p>Школьное лесничество БЕРЁЗКА</p>
+</header>
+
+<nav>
+    <a href="index.html">Главная</a>
+    <a href="about.html">О нас</a>
+    <a href="projects.html">Проекты</a>
+    <a href="gallery.html">Галерея</a>
+    <a href="contacts.html">Контакты</a>
+</nav>
+
+<section class="hero">
+    <div>
+        <h2 style="font-size: 2.5rem;">Растим лес и растем вместе с ним!</h2>
+        <p>Присоединяйся к нашей команде юных лесников</p>
+        <br>
+        <a href="#" class="btn">Стать участником</a>
+    </div>
+</section>
+
+<div class="container">
+    <div class="stats">
+        <div class="stat-item">
+            <h2>1000+</h2>
+            <p>Деревьев посажено</p>
+        </div>
+        <div class="stat-item">
+            <h2>50</h2>
+            <p>Скворечников установлено</p>
+        </div>
+        <div class="stat-item">
+            <h2>10</h2>
+            <p>мест отдыха очищено</p>
+        </div>
+    </div>
+
+    <h2 style="text-align: center; margin-top: 40px;">Наши направления</h2>
+    <div class="cards">
+        <div class="card">
+            <div class="card-content">
+                <h3>🌱 Лесовосстановление</h3>
+                <p>Мы собираем семена, выращиваем саженцы и высаживаем их в настоящем лесу.</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-content">
+                <h3>🔍 Исследования</h3>
+                <p>Изучаем природу родного края, пишем научные работы и участвуем в олимпиадах.</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-content">
+                <h3>🔥 Безопасность</h3>
+                <p>Рассказываем жителям о правилах пожарной безопасности и бережном отношении к природе.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>© 2026 Школьное лесничество «БЕРЁЗКА». Все права защищены лесом.</p>
+</footer>
+
+</body>
+</html>

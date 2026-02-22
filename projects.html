@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Проекты — Зелёный патруль</title>
+    <style>
+        body { font-family: 'Segoe UI', sans-serif; margin: 0; line-height: 1.6; color: #333; }
+        header { background: #2d5a27; color: white; padding: 1rem; text-align: center; }
+        nav { background: #3e7b37; padding: 0.5rem; text-align: center; position: sticky; top: 0; }
+        nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; }
+        nav a:hover { text-decoration: underline; }
+        
+        .container { max-width: 1000px; margin: 20px auto; padding: 0 20px; }
+        
+        .project-card { 
+            background: #f9f9f9; 
+            padding: 25px; 
+            border-left: 8px solid #2d5a27; 
+            margin-bottom: 30px; 
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+        .status { 
+            display: inline-block; 
+            padding: 2px 10px; 
+            border-radius: 20px; 
+            font-size: 0.8rem; 
+            font-weight: bold; 
+            text-transform: uppercase;
+        }
+        .status.active { background: #e8f5e9; color: #2e7d32; }
+        .status.done { background: #fff3e0; color: #ef6c00; }
+
+        footer { background: #2d5a27; color: white; text-align: center; padding: 20px; margin-top: 40px; }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Наши проекты</h1>
+</header>
+
+<nav>
+    <a href="index.html">Главная</a>
+    <a href="about.html">О нас</a>
+    <a href="projects.html">Проекты</a>
+    <a href="gallery.html">Галерея</a>
+    <a href="contacts.html">Контакты</a>
+</nav>
+
+<div class="container">
+    <div class="project-card">
+        <span class="status active">В процессе</span>
+        <h2>🌲 Операция «Берёза»</h2>
+        <p>Мы выращиваем саженцы берёзы в нашем лесу. Цель на этот год: высадить 150 молодых деревьев на территории местного лесничества.</p>
+    </div>
+
+    <div class="project-card">
+        <span class="status done">Завершен</span>
+        <h2>🏠 Птичий городок</h2>
+        <p>Зимой мы изготовили 20 кормушек и 10 скворечников. Все они уже развешены в сельском парке. Ведётся наблюдение за птицами.</p>
+    </div>
+
+    <div class="project-card">
+        <span class="status active">Ежемесячно</span>
+        <h2>🚮 Чистый берег</h2>
+        <p>Экологический десант по очистке береговой линии лесного пруда от бытового мусора.</p>
+    </div>
+</div>
+
+<footer>
+    <p>© 2026 Школьное лесничество «БЕРЁЗКА»</p>
+</footer>
+
+</body>
+</html>
